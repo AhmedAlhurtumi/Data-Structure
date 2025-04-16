@@ -98,3 +98,72 @@ da.display()
 print("Size:", da.size)
 print("Capacity:", da.capacity)
 print("Is empty?", da.is_empty())
+```
+
+### Output Example
+```
+Initializing dynamic array...
+
+--- Initial State ---
+Array elements are:
+
+Is empty? True
+
+--- Adding Elements ---
+Added 10 at index 0
+Added 20 at index 1
+Added 30 at index 2
+Added 40 at index 3
+Array elements are:
+10 20 30 40 
+
+--- Triggering Expansion ---
+Added 50 at index 4
+Array elements are:
+10 20 30 40 50 
+
+--- Insert at Beginning ---
+Inserted 5 at index 0
+Array elements are:
+5 10 20 30 40 50 
+
+--- Insert in Middle ---
+Inserted 25 at index 3
+Array elements are:
+5 10 20 25 30 40 50 
+
+--- Insert at End ---
+Inserted 60 at index 7
+Array elements are:
+5 10 20 25 30 40 50 60 
+
+--- Insert Out of Bounds ---
+Index out of bounds.
+Array elements are:
+5 10 20 25 30 40 50 60 
+
+--- Linear Search ---
+Found 25 at index 3
+99 not found in the array.
+
+--- Delete Existing Element ---
+Deleted 25 from index 3
+Array elements are:
+5 10 20 30 40 50 60 
+
+--- Delete Non-existing Element ---
+99 not found in the array.
+Array elements are:
+5 10 20 30 40 50 60 
+
+--- Trigger Shrinking ---
+Shrunk array to capacity 4
+Array elements are:
+5 10 40 50 
+
+--- Final State ---
+Array elements are:
+5 10 40 50 
+Size: 4
+Capacity: 4
+Is empty? False
