@@ -51,3 +51,32 @@ if __name__ == "__main__":
 
     print("\n--- Final State ---")
     print("Is empty?", ll.is_empty())
+
+```
+### Output Example:
+```
+--- Insertion ---
+Inserted 10 as the first element.
+Inserted 20 at the end of the list.
+Inserted 5 at the start of the list.
+Linked List elements:
+5 -> 10 -> 20 -> None
+
+--- Search ---
+Found 10 at index 1.
+99 not found in the list.
+
+--- Deletion ---
+Deleted 5 from the list.
+Linked List elements:
+10 -> 20 -> None
+Deleted 20 from the list.
+Linked List elements:
+10 -> None
+99 not found in the list.
+Linked List elements:
+10 -> None
+
+--- Final State ---
+Is empty? False
+
