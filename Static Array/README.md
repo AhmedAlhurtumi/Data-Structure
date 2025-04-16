@@ -60,3 +60,35 @@ if __name__ == "__main__":
     # Final display of the array
     print("\nFinal array state:")
     static_array.display()
+```
+
+### Output Example:
+```
+Static Array Example
+Array elements are:
+None None None None None 
+
+Inserting random values:
+Inserting 54 at index 0
+Inserting 22 at index 1
+Inserting 83 at index 2
+Inserting 15 at index 3
+Inserting 77 at index 4
+Array elements are:
+54 22 83 15 77 
+
+Inserting 999 at index 2
+Index 2 already occupied. Use delete before inserting.
+
+Deleting element at index 2 (83)
+Array elements are:
+54 22 None 15 77 
+
+Searching for the element 15 at index 3:
+Element 15 found at index 3
+
+Searching for a value not present (999):
+Element 999 not found
+
+Final array state:
+54 22 None 15 77 
