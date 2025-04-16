@@ -1,20 +1,53 @@
-# 🔗 Singly Linked List in Python
+# 🧠 Linked List in Python
 
-This project is a basic implementation of a **Singly Linked List** in Python. It demonstrates how nodes are connected using pointers and how operations like insertion, deletion, and traversal are manually handled.
+This project demonstrates a simple implementation of a **singly linked list** in Python, encapsulated in a class `LinkedList`. The linked list supports various operations such as **insertion**, **deletion**, **search**, and **display**.
 
 ## 🚀 Features
 
-- Insert at beginning or end
-- Delete elements by value
-- Search for elements
-- Display the list
-- Check if the list is empty
-- Built from scratch using nodes and pointers
+- **Insert at start**: Adds an element at the beginning of the list.
+- **Insert at end**: Adds an element at the end of the list.
+- **Delete element**: Removes a specific element from the list.
+- **Search for element**: Finds an element in the list and returns its index.
+- **Display list**: Prints all elements in the list.
+- **Check if empty**: Determines if the list is empty.
 
 ## 📦 Class: `LinkedList`
 
-This implementation includes a `Node` class and a `LinkedList` class to manage the linked structure.
+### Methods
 
-## Requirements
+- **`__init__(self)`**: Initializes the linked list with an empty list.
+- **`is_empty(self)`**: Returns `True` if the list is empty, otherwise `False`.
+- **`insert_at_start(self, data)`**: Inserts an element at the beginning of the list.
+- **`insert_at_end(self, data)`**: Inserts an element at the end of the list.
+- **`delete(self, data)`**: Deletes the first occurrence of a specified element.
+- **`search(self, data)`**: Searches for an element in the list and returns its index if found.
+- **`display(self)`**: Prints all elements in the list in a human-readable format.
 
-- Python 3.x
+## 📋 Example Usage
+
+```python
+if __name__ == "__main__":
+    ll = LinkedList()
+
+    print("\n--- Insertion ---")
+    ll.insert_at_end(10)
+    ll.insert_at_end(20)
+    ll.insert_at_start(5)
+    ll.display()
+
+    print("\n--- Search ---")
+    ll.search(10)
+    ll.search(99)
+
+    print("\n--- Deletion ---")
+    ll.delete(5)
+    ll.display()
+
+    ll.delete(20)
+    ll.display()
+
+    ll.delete(99)  # Not found
+    ll.display()
+
+    print("\n--- Final State ---")
+    print("Is empty?", ll.is_empty())
