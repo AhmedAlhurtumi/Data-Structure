@@ -61,3 +61,16 @@ if __name__ == "__main__":
 
     # Display the stack after clearing
     print("Stack after clearing:", stack.display())
+```
+
+### Outplut Example:
+```
+Initial stack: Stack is empty
+Stack after pushing items: [10, 20, 30]
+Top item of the stack: 30
+Stack after popping an item: [10, 20]
+Size of the stack: 2
+Is the stack empty? False
+Stack cleared
+Stack after clearing: Stack is empty
+
